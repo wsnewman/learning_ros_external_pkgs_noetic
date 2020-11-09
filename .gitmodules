@@ -1,0 +1,11 @@
+[submodule "gazebo_ros_pkgs"]
+	path = gazebo_ros_pkgs
+	url = https://github.com/ros-simulation/gazebo_ros_pkgs
+	branch = noetic-devel
+[submodule "cwru_stickyfingers"]
+	path = cwru_stickyfingers
+	url = https://github.com/cwru-robotics/cwru_stickyfingers
+	branch = gz9
+[submodule "catkin_simple"]
+	path = catkin_simple
+	url = https://github.com/catkin/catkin_simple
