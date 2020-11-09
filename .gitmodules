@@ -6,3 +6,6 @@
 	path = cwru_stickyfingers
 	url = https://github.com/cwru-robotics/cwru_stickyfingers
 	branch = gz9
+[submodule "catkin_simple"]
+	path = catkin_simple
+	url = https://github.com/catkin/catkin_simple
