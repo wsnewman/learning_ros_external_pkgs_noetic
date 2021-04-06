@@ -69,7 +69,7 @@ class Wobbler(object):
 
     def _reset_control_modes(self):
         rate = rospy.Rate(self._rate)
-        for _ in xrange(100):
+        for _ in range(100):
             if rospy.is_shutdown():
                 return False
             self._left_arm.exit_control_mode()
