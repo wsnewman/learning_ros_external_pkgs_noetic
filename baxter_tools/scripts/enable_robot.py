@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/env python3
 
 # Copyright (c) 2013-2015, Rethink Robotics
 # All rights reserved.
@@ -37,7 +37,6 @@ import baxter_interface
 
 from baxter_interface import CHECK_VERSION
 
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-s', '--state', const='state',
@@ -67,7 +66,7 @@ def main():
     try:
         for act in args.actions:
             if act == 'state':
-                print rs.state()
+                print(rs.state())
             elif act == 'enable':
                 rs.enable()
             elif act == 'disable':

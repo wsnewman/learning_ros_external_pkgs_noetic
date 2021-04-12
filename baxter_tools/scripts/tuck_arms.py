@@ -155,7 +155,7 @@ class Tuck(object):
         if any(disabled.values()):
             [pub.publish(Empty()) for pub in self._disable_pub.values()]
         while (any(self._arm_state['tuck'][limb] != goal
-                   for limb, goal in tuck.viewitems())
+                   for limb, goal in tuck.items())
                and not rospy.is_shutdown()):
             if self._rs.state().enabled == False:
                 self._enable_pub.publish(True)
