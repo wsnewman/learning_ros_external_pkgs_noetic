@@ -166,7 +166,7 @@ def run_update(updater, uuid):
         updater.command_update(uuid)
     except OSError as e:
         if e.errno == errno.EINVAL:
-            print (e.strerror)
+            print(e.strerror)
             return 1
         raise
 
@@ -178,7 +178,7 @@ def run_update(updater, uuid):
         )
     except Exception as e:
         if not (hasattr(e, 'errno') and e.errno == errno.ESHUTDOWN):
-            print (e.strerror)
+            print(e.strerror)
         nl.rc = 1
 
     return nl.rc
@@ -266,7 +266,7 @@ def main():
         return 0
     elif cmd == 'update':
         if uuid == '':
-            print ("Error:  no update uuid specified")
+            print("Error:  no update uuid specified")
             return 1
         msg = ("NOTE: Please plug in any Rethink Electric Parallel Grippers\n"
                "      into the robot now, so that the Gripper Firmware\n"

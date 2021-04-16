@@ -1,4 +1,4 @@
-#!/usr/bin/env python33
+#!/usr/bin/env python3
 
 # Copyright (c) 2013-2015, Rethink Robotics
 # All rights reserved.
@@ -291,7 +291,7 @@ class MoveArms(SmokeTest):
                  [0.0, -0.55, 0.0, 0.75, 0.0, 1.26, 0.0],
                 )
             for move in joint_moves:
-                print ("Test: Moving to Joint Positions: ",)
+                print ("Test: Moving to Joint Positions: ")
                 print (", ".join("%.2f" % x for x in move))
                 left_thread = threading.Thread(
                     target=move_thread,
